@@ -1,0 +1,43 @@
+PODS:
+  - FBSnapshotTestCase (2.1.1):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.1)
+  - FBSnapshotTestCase/Core (2.1.1)
+  - FBSnapshotTestCase/SwiftSupport (2.1.1):
+    - FBSnapshotTestCase/Core
+  - Nimble (3.2.0)
+  - Nimble-Snapshots (4.1.0):
+    - FBSnapshotTestCase (~> 2.0)
+    - Nimble
+    - Quick
+  - Quick (0.9.2)
+  - ZText (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase (from `https://github.com/facebook/ios-snapshot-test-case`, tag `2.1.1`)
+  - Nimble (~> 3.0)
+  - Nimble-Snapshots
+  - Quick (~> 0.8)
+  - ZText (from `../`)
+
+EXTERNAL SOURCES:
+  FBSnapshotTestCase:
+    :git: https://github.com/facebook/ios-snapshot-test-case
+    :tag: 2.1.1
+  ZText:
+    :path: "../"
+
+CHECKOUT OPTIONS:
+  FBSnapshotTestCase:
+    :git: https://github.com/facebook/ios-snapshot-test-case
+    :tag: 2.1.1
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: ec0ed7378d617e4b787e6cf9899d22cb86010b94
+  Nimble: 703854335d181df169bbca9c97117b5cf8c47c1d
+  Nimble-Snapshots: 2da4d2ec829b458d6886c06812c52493fce284c9
+  Quick: 18d057bc66451eedd5d1c8dc99ba2a5db6e60226
+  ZText: fcbe62fe0fc1ae4cecf57938899c3c6d9402ff72
+
+PODFILE CHECKSUM: 242bb0167e18420b7d339fd0bcd82a820ff30fa8
+
+COCOAPODS: 1.0.0

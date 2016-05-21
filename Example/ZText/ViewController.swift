@@ -7,18 +7,32 @@
 //
 
 import UIKit
+import ZText
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var lbTitle: UILabel!
+    @IBOutlet weak var lbDescription: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        ZText.boldFont         = UIFont(name: "GillSans-Bold", size: 42)!
+        ZText.italicFont       = UIFont(name: "GillSans-Italic", size: 18)!
+        ZText.defaultAlignment = NSTextAlignment.Center
+        
+        lbTitle.attributedText = ZText.begin()
+            .addBoldText("Z", color: UIColor.whiteColor())
+            .addBoldText("Text", color: UIColor.yellowColor())
+            .end()
+        
+        lbDescription.attributedText = ZText.begin()
+            .addItalicText("'Cause ", color: UIColor.yellowColor())
+            .addItalicText("NSAttributedString ", color: UIColor.whiteColor())
+            .addItalicText("is ", color: UIColor.yellowColor())
+            .addItalicText("damn ", color: UIColor.whiteColor())
+            .addItalicText("sexy ", color: UIColor.yellowColor())
+            .end()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
 
