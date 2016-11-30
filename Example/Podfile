@@ -1,14 +1,23 @@
+platform :ios, '9.0'
 use_frameworks!
 
 target 'ZText_Example' do
   pod 'ZText', :path => '../'
+end
 
-  target 'ZText_Tests' do
-    inherit! :search_paths
+target 'ZText_Tests' do
+  inherit! :search_paths
 
-    pod 'Quick', '~> 0.8'
-    pod 'Nimble', '~> 3.0'
-    pod 'FBSnapshotTestCase', :git => 'https://github.com/facebook/ios-snapshot-test-case', :tag => '2.1.1'
-    pod 'Nimble-Snapshots'
+  pod 'Quick'
+  pod 'Nimble'
+  pod 'FBSnapshotTestCase'
+  pod 'Nimble-Snapshots'
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+          config.build_settings['SWIFT_VERSION'] = '3.0'
+      end
   end
 end

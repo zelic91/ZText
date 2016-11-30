@@ -19,19 +19,19 @@ class ViewController: UIViewController {
         
         ZText.boldFont         = UIFont(name: "GillSans-Bold", size: 42)!
         ZText.italicFont       = UIFont(name: "GillSans-Italic", size: 18)!
-        ZText.defaultAlignment = NSTextAlignment.Center
+        ZText.defaultAlignment = NSTextAlignment.center
         
         lbTitle.attributedText = ZText.begin()
-            .addBoldText("Z", color: UIColor.whiteColor())
-            .addBoldText("Text", color: UIColor.yellowColor())
+            .addBoldText("Z", color: UIColor.white)
+            .addBoldText("Text", color: UIColor.yellow)
             .end()
         
         lbDescription.attributedText = ZText.begin()
-            .addItalicText("'Cause ", color: UIColor.yellowColor())
-            .addItalicText("NSAttributedString ", color: UIColor.whiteColor())
-            .addItalicText("is ", color: UIColor.yellowColor())
-            .addItalicText("damn ", color: UIColor.whiteColor())
-            .addItalicText("sexy ", color: UIColor.yellowColor())
+            .addItalicText("'Cause ", color: UIColor.yellow)
+            .addItalicText("NSAttributedString ", color: UIColor.white)
+            .addItalicText("is ", color: UIColor.yellow)
+            .addItalicText("damn ", color: UIColor.white)
+            .addItalicText("sexy ", color: UIColor.yellow)
             .end()
     }
 }
