@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ZText'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = 'A cooler way to use NSAttributedString.'
 
   s.description      = <<-DESC
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.author           = { 'Thuong Nguyen' => 'thuongnh.uit@gmail.com' }
   s.source           = { :git => 'https://github.com/zelic91/ZText.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '8.0'
 
   s.source_files = 'ZText/Classes/**/*'
 end
